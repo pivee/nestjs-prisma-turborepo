@@ -17,7 +17,9 @@ The `schema.prisma` file inside `/packages/database/prisma` is brilliant for sch
 4. Add the database  URL into the .env file inside the NestJS application.
     
     ```json
+
     DATABASE_URL="postgresql://user:password@host:5432/postgres"
+
     ```
     
 5. Run `prisma:generate` script after schema changes.
