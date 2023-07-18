@@ -1,4 +1,4 @@
-NestJS + Prisma integration in Turborepo
+# NestJS + Prisma integration in Turborepo
 
 The `schema.prisma` file inside `/packages/database/prisma` is brilliant for schema definitions and updates. And the `index.ts` file inside it `export * from '@prisma/client`, so it can be used in other places. However, this package could not be used with the NestJS application because it kept throwing `Unexpected token 'export'` error. Tried many places, but couldn’t find a proper solution that worked. So, created the following workaround for it.
 
